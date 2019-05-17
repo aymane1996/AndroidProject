@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Colors for the Bottom Navigation View -->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#c3c3c3 </color>
+
+
+    <!-- Colors for the reporting -->
+    <color name="filtersfab">#3C82FF</color>
+    <color name="filters_header">#303f9f</color>
+    <color name="filters_buttons">#ff4081</color>
+    <color name="filters_buttons_selected">#c2185b</color>
+    <color name="filters_chips">#b3e5fc</color>
+    <color name="dark_blue">#4285F4</color>
+    <color name="text_color_dark">#80000000</color>
+
+    <color name="colorBackground">#f9f9fa</color>
+    <color name="colorTextSubtitle">#4e4e4e</color>
+    <color name="colorTextTitle">#262626</color>
+</resources>

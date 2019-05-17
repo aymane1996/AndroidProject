@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_above="@id/recyclerView"
+                    android:text="Hello" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabreport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="65dp"
+            android:layout_marginRight="12dp"
+            android:clickable="true"
+            android:scaleType="fitEnd"
+            app:elevation="8dp"
+            app:fabSize="auto"
+            android:src="@drawable/ic_create_24dp" />
+
+
+
+        <!-- Bottom Navigation Bar -->
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/bottomBar"
+            android:layout_alignParentBottom="true">
+
+
+            <android.support.design.widget.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bottomNavView_Bar"
+                android:background="@drawable/white_grey_border_top"
+                android:theme="@style/Widget.BottomNavigationView"
+                app:menu="@menu/bottom_navigation_menu"
+                app:elevation="8dp"
+                app:labelVisibilityMode="labeled">
+
+
+            </android.support.design.widget.BottomNavigationView>
+        </android.support.design.widget.CoordinatorLayout>
+        <!-- End of the Bottom Navigation View -->
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
